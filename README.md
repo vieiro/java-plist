@@ -8,7 +8,7 @@ java-plist serializes and deserializes Java Beans into the [plist](https://en.wi
 - Java 1.8 and higher.
 - Must be as ergonomic and fast as possible, in that order.
 
-[![Javadoc](https://img.shields.io/badge/JavaDoc-Online-green)](https://vieiro.github.io/java-plist/javadoc/)
+[![Javadoc](https://img.shields.io/badge/JavaDoc-Online-green)](https://vieiro.github.io/java-plist/)
 
 ## Usage
 

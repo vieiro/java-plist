@@ -4,9 +4,11 @@ java-plist serializes and deserializes Java Beans into the [plist](https://en.wi
 
 ## Goals
 
-- Have no third-party dependencies.
-- Works with Java 1.8 and higher.
+- No third-party dependencies.
+- Java 1.8 and higher.
 - Must be as ergonomic and fast as possible, in that order.
+
+[![Javadoc](https://img.shields.io/badge/JavaDoc-Online-green)](https://vieiro.github.io/java-plist/javadoc/)
 
 ## Usage
 
@@ -20,11 +22,39 @@ java-plist is available in Maven Central under the following coordinates:
 </dependency>
 ```
 
-[![Javadoc](https://img.shields.io/badge/JavaDoc-Online-green)](https://vieiro.github.io/java-plist/javadoc/)
-
 ### Reading `plist` files (deserializing Java objects)
 
-Use `PListIO.read(File)` or `PListIO.read(InputStream)` to read/deserialize an Java Bean from a `plist` file.
+Read a Java Bean from a file:
+
+```java
+File f = ...
+MyBean bean = (MyBean) PListIO.read(f);
+```
+
+Or from an `InputStream`:
+
+```java
+try (InputStream input = ...) {
+    MyBean bean = (MyBean) PListIO.read(input);
+}
+```
+
+Write a Java Bean to a `File`:
+
+```java
+File file = ...
+MyBean bean = ...
+PListIO.write(file, bean);
+```
+
+Or to an `OutputStream`:
+
+```java
+MyBean bean = ...
+try (OutputStream output = ...) {
+    PListIO.write(output, bean);
+}
+```
 
 ### Writing `plist` files (serializing Java objects)
 

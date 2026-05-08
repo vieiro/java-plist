@@ -20,6 +20,8 @@ java-plist is available in Maven Central under the following coordinates:
 </dependency>
 ```
 
+[![Javadoc](https://img.shields.io/badge/JavaDoc-Online-green)](https://vieiro.github.io/java-plist/javadoc/)
+
 ### Reading `plist` files (deserializing Java objects)
 
 Use `PListIO.read(File)` or `PListIO.read(InputStream)` to read/deserialize an Java Bean from a `plist` file.

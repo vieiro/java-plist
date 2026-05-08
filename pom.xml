@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.vieiro</groupId>
     <artifactId>java-plist</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>java-plist</name>
@@ -22,7 +22,7 @@
         <connection>scm:git:git@github.com:vieiro/java-plist.git</connection>
         <developerConnection>scm:git:git@github.com:vieiro/java-plist.git</developerConnection>
         <url>https://github.com/vieiro/java-plist</url>
-        <tag>v1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <issueManagement>

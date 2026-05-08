@@ -10,6 +10,16 @@ java-plist serializes and deserializes Java Beans into the [plist](https://en.wi
 
 ## Usage
 
+java-plist is available in Maven Central under the following coordinates:
+
+```xml
+<dependency>
+    <groupId>net.vieiro</groupId>
+    <artifactId>java-plist</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 ### Reading `plist` files (deserializing Java objects)
 
 Use `PListIO.read(File)` or `PListIO.read(InputStream)` to read/deserialize an Java Bean from a `plist` file.

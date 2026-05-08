@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2025 Antonio Vieiro <antonio@vieiro.net>.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>method</key>
+        <string>app-store</string>
+        <key>teamID</key>
+        <string>XXXXXXXXXX</string>
+        <key>uploadBitcode</key>
+        <true/>
+        <key>compileBitcode</key>
+        <true/>
+        <key>uploadSymbols</key>
+        <true/>
+        <key>signingStyle</key>
+        <string>manual</string>
+        <key>signingCertificate</key>
+        <string>iOS Distribution: POSSIBLE Mobile</string>
+        <key>provisioningProfiles</key>
+        <dict>
+            <key>com.client.appname</key>
+            <string>Client App Release</string>
+            <key>com.client.appname.watchkitapp</key>
+            <string>Client App WatchApp Release</string>
+            <key>com.client.appname.watchkitapp.watchkitextension</key>
+            <string>Client App WatchKitExtension Release</string>
+            <key>com.client.appname.RemoteNotificationServiceExtension</key>
+            <string>Client App PushExtension Release</string>
+            <key>com.client.appname.Stickers</key>
+            <string>Client App Stickers Release</string>
+            <key>elements</key>
+            <array>
+                <string>Hello</string>
+                <real>3.1416</real>
+                <integer>1</integer>
+                <dict>
+                    <key>A</key>
+                    <string>B</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</plist>
